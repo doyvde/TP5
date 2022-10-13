@@ -191,7 +191,7 @@ void primAlgo(GRAPHE G, int matrice[MAX][MAX]){
 
         for (int i = 0; i < V; i++) {
             if (selected[i]) {
-                for (int j = 0; j < V; j++) {
+                for (j = 0; j < V; j++) {
                     if (!selected[j] && matrice[i][j]) {  // not in selected and there is an edge
                         if (min > matrice[i][j]) {
                             min = matrice[i][j];
